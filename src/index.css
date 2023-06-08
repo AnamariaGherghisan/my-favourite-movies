@@ -12,6 +12,62 @@ code {
     monospace;
 }
 
-.movie-card{
-  width:18rem;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.movie-card {
+  width: 18rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.movie-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-card h5 {
+  margin-bottom: 10px;
+}
+
+.movie-card button {
+  margin-top: auto;
+}
+.movie-card {
+  position: relative;
+}
+
+.movie-card-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.movie-card-overlay .btn-primary {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
+
+.movie-card-overlay .btn-primary i {
+  margin-right: 5px;
 }
